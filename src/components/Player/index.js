@@ -1,5 +1,6 @@
 import React from 'react';
-import { Container, Current } from './styles';
+import { Container, Current, Volume } from './styles';
+import VoumeIcon from '../../assets/images/volume.svg';
 
 const Player = () => (
   <Container>
@@ -13,6 +14,9 @@ const Player = () => (
         <small>Foo Fighters</small>
       </div>
     </Current>
+    <Volume>
+      <img src={VoumeIcon} alt="Volume" />
+    </Volume>
   </Container>
 );
 

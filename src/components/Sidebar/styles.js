@@ -1,5 +1,7 @@
 import styled from 'styled-components';
 
+import { Spinner } from '../Loading/styles';
+
 export const Container = styled.aside`
   height: 100%;
   width: 200px;
@@ -11,7 +13,7 @@ export const Container = styled.aside`
   justify-content: space-between;
 
   > div {
-    padding: 25px;
+    padding: 25px 20px;
   }
 `;
 
@@ -24,12 +26,15 @@ export const Nav = styled.ul`
   }
 
   li {
+    display:flex;
+    align-items: center;
+
     a {
       color: inherit;
       text-decoration: none;
       font-size: 13px;
       line-height: 32px;
-      font-weight: ${props => (props.main ? 'bold' : 'normal')}
+      font-weight: ${props => (props.main ? 'bold' : 'normal')};
 
       &:hover {
         color: #fff;
@@ -41,6 +46,11 @@ export const Nav = styled.ul`
       line-height: 22px;
       letter-spacing: 1.11px;
       font-weight: lighter;
+    }
+
+    ${Spinner} {
+      height: 15px;
+      margin-left: 5px;
     }
   }
 `;

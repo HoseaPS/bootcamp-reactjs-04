@@ -23,5 +23,5 @@ export default function playlists(state = INITIAL_STATE, action) {
 
 export const Creators = {
   setError: message => ({ type: Types.SET, payload: { message } }),
-  getPlaylistsSuccess: () => ({ type: Types.HIDE }),
+  hideError: () => ({ type: Types.HIDE }),
 };

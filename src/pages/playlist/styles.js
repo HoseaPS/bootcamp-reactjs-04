@@ -98,7 +98,11 @@ export const SongList = styled.table`
     }
   }
 
-  tbody tr:hover td {
-    background: #282828;
+  tbody tr {
+    user-select: none;
+
+    &:hover td {
+      background: #282828;
+    }
   }
 `;
